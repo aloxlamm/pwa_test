@@ -1,0 +1,37 @@
+{
+    "name": "crumbl_os",
+    "version": "1.0.0",
+    "description": "Crumbl OS Frontend Application",
+    "scripts": {
+        "build": "webpack --config webpack.config.local.js",
+        "build-dev": "webpack --config webpack.config.dev.js",
+        "build-prod": "webpack --config webpack.config.prod.js",
+        "start": "webpack-dev-server --config webpack.config.local.js --hot --history-api-fallback --open",
+        "start-prod": "webpack-dev-server --config webpack.config.prod.js --hot --history-api-fallback --open",
+        "start-dev": "webpack-dev-server --config webpack.config.dev.js --hot --history-api-fallback --open"
+    },
+    "author": "phoenix-systems.ch",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/plugin-transform-runtime": "^7.4.4",
+        "@babel/polyfill": "^7.4.4",
+        "@babel/preset-env": "^7.4.5",
+        "@babel/runtime": "^7.4.5",
+        "@uppy/locales": "^1.2.0",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^2.0.2",
+        "copy-webpack-plugin": "^5.0.3",
+        "css-loader": "^2.1.1",
+        "html-webpack-plugin": "^3.2.0",
+        "lit-html": "^1.1.0",
+        "mini-css-extract-plugin": "^0.6.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "style-loader": "^0.23.1",
+        "terser-webpack-plugin": "^1.3.0",
+        "webpack": "^4.32.2",
+        "webpack-cli": "^3.3.2",
+        "webpack-dev-server": "^3.6.0"
+    }
+}
